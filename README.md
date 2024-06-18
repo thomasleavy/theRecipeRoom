@@ -8,7 +8,8 @@ This repository contains code for The Recipe Room website. It showcases a variet
 - **Lunch Ideas**
 - **Snacks**
 - **Dinner Options**
-- **Desserts** -**About**
+- **Desserts**
+- **About**
 
 ## Running the Project Locally
 
