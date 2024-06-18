@@ -1,0 +1,7 @@
+{
+  "liveServer.settings.proxy": {
+    "enable": true,
+    "baseUri": "/theRecipeRoom", // Adjust this to your project path
+    "proxyUri": "http://localhost/theRecipeRoom"
+  }
+}
