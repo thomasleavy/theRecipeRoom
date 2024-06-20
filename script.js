@@ -57,3 +57,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Preparation container
+document.addEventListener('DOMContentLoaded', function() {
+  const preparationContainer = document.getElementById('preparation-container');
+
+  setTimeout(function() {
+      preparationContainer.classList.add('visible');
+  }, 300); // Delay of 0.3 seconds
+});
+
+
