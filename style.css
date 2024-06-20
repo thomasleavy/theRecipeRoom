@@ -494,4 +494,81 @@ a:link, a:visited, a:hover, a:active {
 }
 
 
+/*Meal preparation pages*/
+
+.preparation-info {
+  font-family: "Indie Flower", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  font-size: 20px;
+}
+
+.preparation-container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgb(245, 201, 79);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.preparation-container.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.preparation-container img {
+  max-width: 80%;
+  height: auto;
+}
+
+.preparation-time {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preparation-time img {
+  margin-right: 5px;
+  width: 5%;
+}
+
+.steps {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.h1-steps {
+  font-weight:600;
+  text-align: center;
+}
+
+.steps h3 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.steps ol {
+  padding-left: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ingredients {
+  text-align: left;
+  margin-top: 20px;
+}
+
+
+
+.ingredients ul {
+  padding-left: 20px;
+}
 
