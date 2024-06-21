@@ -5,11 +5,14 @@ This repository contains code for The Recipe Room website. It showcases a variet
 ## Features
 
 - **Breakfast Recipes**
-- **Lunch Ideas**
-- **Snacks**
-- **Dinner Options**
-- **Desserts**
+- **Lunch Recipes**
+- **Snack Recipes**
+- **Dinner Recipes**
+- **Dessert Recipes**
 - **About**
+- **Signup Newsletter**
+- **Social media links**
+
 
 ## Running the Project Locally
 
