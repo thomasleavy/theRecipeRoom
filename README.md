@@ -1,6 +1,6 @@
 # The Recipe Room
 
-This repository contains code for The Recipe Room website. It showcases a variety of food for different meal types. It uses HTML, CSS, JavaScript, PHP and XAMMP. It was built using Visual Studio Code (VSC) with assistance from AI at different points.
+This repository contains code for The Recipe Room website. It showcases a variety of food for different meal types. It uses HTML, CSS, JavaScript, PHP and XAMMP. It uses Twitter Bootstrap. It was built using Visual Studio Code (VSC) with assistance from AI at different points.
 
 ## Features
 
