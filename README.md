@@ -5,11 +5,14 @@ This repository contains code for The Recipe Room website. It showcases a variet
 ## Features
 
 - **Breakfast Recipes**
-- **Lunch Ideas**
-- **Snacks**
-- **Dinner Options**
-- **Desserts**
+- **Lunch Recipes**
+- **Snack Recipes**
+- **Dinner Recipes**
+- **Dessert Recipes**
 - **About**
+- **Signup Newsletter**
+- **Social media links**
+
 
 ## Running the Project Locally
 
@@ -29,3 +32,5 @@ If you want to reach out, my email address is: thomasleavy1@outlook.com
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+Link: https://thomasleavy.github.io/theRecipeRoom/
