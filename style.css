@@ -331,6 +331,18 @@ a:link, a:visited, a:hover, a:active {
   font-size: 2vw;
 }
 
+@media (max-width: 768px) {
+  .card-text {
+font-size: 3vh;
+  }
+}
+
+@media (max-width: 460px) {
+  .card-text {
+font-size: 3vh;
+  }
+}
+
 .treat-yourself-box {
   border: 0.2vw solid rgb(245, 201, 79);
   padding: 1vw;
@@ -363,12 +375,12 @@ a:link, a:visited, a:hover, a:active {
   padding: 2vw;
   border-radius: 1vw;
   width: 40vw;
-  margin-left: -76.25vw;
+  margin-left: 0 auto;
   transition: margin-left 0.8s ease-in-out;
   transform: translateX(110%);
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .newsletter-container {
     background-color: rgb(251, 247, 247);
     color: black;

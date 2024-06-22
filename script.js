@@ -67,5 +67,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Preparation container END
-
-
