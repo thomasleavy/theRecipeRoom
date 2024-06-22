@@ -597,6 +597,404 @@ font-size: 3vh;
   flex: 1;
 }
 
+/* General styles */
+body {
+  background-color: #ebebeb;
+  padding-top: 10vh; /* content starts below header */
+  font-family: "Indie Flower", cursive;
+  zoom: 75%; /* default zoom level at 75% */
+}
+
+/* Custom logo */
+.custom-logo {
+  width: 6vw;
+  max-width: 150px;
+  height: auto; /* maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .custom-logo {
+    width: 8vw;
+    max-width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-logo {
+    width: 12vw; /* increase size for smaller screens */
+    max-width: 80px; /* adjust maximum width */
+  }
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Header styles */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  padding: 10px 0;
+  max-height: 16%; /* ensure header is not too large */
+  overflow: hidden;
+}
+
+/* Homepage styles */
+.homepage-center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+}
+
+.homepage-image-container {
+  position: relative;
+  width: 65vw; /* adjust width for medium screens */
+  max-width: 100%; /* ensure image container is responsive */
+  text-align: center;
+}
+
+.homepage-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* adjust as necessary */
+}
+
+.homepage-text-box {
+  background-color: rgb(251, 247, 247);
+  color: black;
+  padding: 1vw 2vw; /* adjust padding for better spacing */
+  border-radius: 1vw;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.h2-overlaid-text {
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: 400;
+  color: black;
+}
+
+.homepage-secondary-text-box {
+  background-color: rgb(197, 12, 92);
+  color: white;
+  padding: 1vw 2vw; /* adjust padding for better spacing */
+  border-radius: 1vw;
+  font-size: 1.8vw;
+  text-align: center;
+  position: absolute;
+  bottom: -5vw; /* adjust position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Homepage media queries */
+@media (max-width: 768px) {
+  .homepage-image-container {
+    width: 90vw; /* adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-image-container {
+    width: 200vw; /* increase width for very small screens */
+    padding-bottom: 40vh; /* increase padding for better spacing */
+  }
+
+  .homepage-text-box {
+    font-size: 4vw; /* increase font size for smaller screens */
+  }
+
+  .h2-overlaid-text {
+    font-size: 6vw; /* increase font size for smaller screens */
+  }
+
+  .homepage-secondary-text-box {
+    font-size: 3vw; /* adjust font size */
+    bottom: -10vw; /* adjust position */
+  }
+}
+
+/* Homepage Overlay and Secondary Text Box */
+.homepage-overlay-text {
+  padding-bottom: 40vh; /* Adjust padding for better placement */
+}
+
+.h2-overlaid-text {
+  font-size: 6vw; /* Increased font size for smaller screens */
+}
+
+.homepage-secondary-text-box {
+  font-size: 3vw; /* Font size on smaller screens */
+  bottom: -10vw; /* Adjust position of secondary text box */
+  margin-bottom: 40vh; /* Adjust margin for better spacing */
+}
+
+/* Card Styles */
+.h5-card {
+  color: black;
+  font-family: "Indie Flower", cursive;
+  font-weight: 800;
+  font-size: 1.475em; /* Adjusted font size */
+  text-align: center;
+}
+
+.card-text,
+.card-title .card-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 2vw; /* Adjusted font size */
+}
+
+@media (max-width: 768px) {
+  .card-text {
+    font-size: 3vh; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 460px) {
+  .card-text {
+    font-size: 3vh; /* Adjust font size for very small screens */
+  }
+}
+
+.treat-yourself-box {
+  border: 0.2vw solid rgb(245, 201, 79);
+  padding: 1vw;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(245, 201, 79);
+  color: #e65949;
+  border-radius: 1vw;
+  font-size: 2vw; /* Adjusted font size */
+}
+
+.treat-yourself-box:hover {
+  border-color: rgb(249, 214, 118);
+  background-color: rgb(249, 214, 118);
+}
+
+/* Newsletter Styles */
+.newsletter-container {
+  background-color: rgb(251, 247, 247);
+  color: black;
+  padding: 2vw;
+  border-radius: 1vw;
+  width: 40vw; /* Adjusted width for medium screens */
+  margin-left: 0 auto;
+  transition: margin-left 0.8s ease-in-out;
+  transform: translateX(110%);
+}
+
+@media (max-width: 768px) {
+  .newsletter-container {
+    background-color: rgb(251, 247, 247);
+    color: black;
+    padding: 2vw;
+    border-radius: 1vw;
+    width: 40vw; /* Adjusted width for smaller screens */
+    margin-left: -76.25vw; /* Slide out of view on smaller screens */
+    transition: margin-left 0.8s ease-in-out;
+    transform: translateX(110%);
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-container {
+    background-color: rgb(251, 247, 247);
+    color: black;
+    padding: 4vw; /* Adjust padding for smaller screens */
+    border-radius: 1vw;
+    width: 45vw; /* Adjusted width for very small screens */
+    transition: margin-left 0.8s ease-in-out;
+    transform: translateX(110%);
+  }
+}
+
+.newsletter-container .h2-newsletter {
+  font-size: 3vw; /* Adjusted font size for smaller screens */
+  margin-bottom: 1vw;
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+}
+
+.newsletter-container input[type="email"] {
+  width: calc(100% - 5vw);
+  padding: 1vw;
+  margin-bottom: 1vw;
+  border: 0.1vw solid #ccc;
+  border-radius: 0.5vw;
+}
+
+.newsletter-container .newsletter-button {
+  background-color: rgb(245, 201, 79);
+  color: #e65949;
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  font-family: "Indie Flower", cursive;
+  font-size: 2vw; /* Adjusted font size */
+}
+
+.newsletter-button:hover {
+  background-color: rgb(249, 214, 118);
+}
+
+/* Social Media Section */
+.p-socials {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vw; /* Adjusted font size */
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .p-socials {
+    font-size: 3vw; /* Adjusted font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .p-socials {
+    font-size: 3vw; /* Adjusted font size for very small screens */
+  }
+}
+
+.col-md-6 .socials-img {
+  width: 6vw;
+  height: auto;
+  margin-right: 0.5vw;
+}
+
+.recipe-room-container {
+  display: flex;
+  align-items: center;
+}
+
+.h1-socials {
+  margin-right: 5vw;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.socials-img {
+  max-width: 6vw;
+  height: auto;
+}
+
+.socials-logo {
+  max-width: 10vw;
+  height: auto;
+}
+
+.socials-blank-space {
+  margin-bottom: 2.1vw;
+}
+
+/* Recipes Pages */
+/* Top Text Container */
+.recipes-top-container {
+  background-color: rgb(197, 12, 92);
+  color: white;
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+  font-size: 1.8vw; /* Adjusted font size */
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  width: 80%;
+  max-width: 60vw; /* Ensure it doesn't get too wide */
+  margin: auto;
+}
+
+.recipes-top-container h1 {
+  margin: 0; /* Remove default margin */
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px; /* Ensure maximum width for large screens */
+  margin: auto;
+  padding-left: 3vw;
+}
+
+.ads {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 8vw; /* Adjusted margin for spacing */
+}
+
+.ads img {
+  width: 37.5vw; /* Adjusted width for images */
+  height: 80vh; /* Adjusted height for images */
+}
+
+.recipes {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.recipe-container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(245, 201, 79);
+  padding: 1vw;
+  margin-bottom: 1vw;
+  border-radius: 0.5vw;
+  width: 100%;
+  max-width: 80vw; /* Adjusted max-width for better fit */
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.recipe-container:hover {
+  transform: scale(1.02);
+}
+
+.recipe-container img {
+  width: 20vw; /* Adjusted width for recipe images */
+  height: auto;
+  border-radius: 0.5vw;
+  margin-right: 1vw;
+}
+
+.recipe-details {
+  flex: 1;
+}
+
+/* Recipe Details */
 .recipe-details h3 {
   margin: 0.5vw 0;
   font-size: 2.2vw;
@@ -625,19 +1023,19 @@ font-size: 3vh;
 
 @media (max-width: 768px) {
   .recipes-top-container {
-    font-size: 2vw; 
+    font-size: 2vw; /* Adjusted font size for smaller screens */
   }
 
   .recipe-details h3 {
-    font-size: 1.8em;
+    font-size: 1.8em; /* Adjusted font size for smaller screens */
   }
 
   .recipe-details p {
-    font-size: 1.2em; 
+    font-size: 1.2em; /* Adjusted font size for smaller screens */
   }
 
   .prep-time {
-    font-size: 1.1em;
+    font-size: 1.1em; /* Adjusted font size for smaller screens */
   }
 
   .recipe-details .prep-time img {
@@ -647,26 +1045,26 @@ font-size: 3vh;
   }
 
   .recipe-container img {
-    width: 90%; 
-    margin: auto; 
+    width: 90%; /* Adjusted width for smaller screens */
+    margin: auto; /* Center align the image */
   }
 }
 
 @media (max-width: 480px) {
   .recipes-top-container {
-    font-size: 2.5vw; 
+    font-size: 2.5vw; /* Adjusted font size for very small screens */
   }
 
   .recipe-details h3 {
-    font-size: 2em;
+    font-size: 2em; /* Adjusted font size for very small screens */
   }
 
   .recipe-details p {
-    font-size: 1.5em; 
+    font-size: 1.5em; /* Adjusted font size for very small screens */
   }
 
   .prep-time img {
-    width: 30px; 
+    width: 30px; /* Adjusted image size for smaller screens */
   }
 
   .recipe-details .prep-time img {
@@ -676,12 +1074,12 @@ font-size: 3vh;
   }
 
   .recipe-container img {
-    width: 80%;
-    margin: auto;
+    width: 80%; /* Adjusted width for very small screens */
+    margin: auto; /* Center align the image */
   }
 }
 
-/* Footer information styling */
+/* Footer Information Styling */
 .copyright-text {
   font-family: "Indie Flower", cursive;
   font-weight: bold;
@@ -692,28 +1090,28 @@ font-size: 3vh;
   padding-top: 1vw;
 }
 
-/* About page */
-/* About logo under big image at top of page */
+/* About Page */
+/* About Logo under Big Image at Top of Page */
 .about-logo-page {
   text-align: center;
-  height: 10vh; /* This controls the height of the container, not the image */
+  height: 10vh; /* Controls the height of the container, not the image */
 }
 
 .about-logo-page img {
-  width: 20vw; 
-  height: auto; 
-  max-width: 15%;
+  width: 20vw; /* Adjusted width for the logo image */
+  height: auto;
+  max-width: 15%; /* Ensures it doesn't exceed a certain percentage of the parent */
 }
 
-/* About text section */
+/* About Text Section */
 .about-container {
   background-color: rgb(251, 247, 247);
   border-radius: 1.5vw;
   padding: 2vw;
   margin: 2vw auto;
-  max-width: 50vw;
+  max-width: 50vw; /* Maximum width for larger screens */
   box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
-  font-size: 1.5vw; 
+  font-size: 1.5vw; /* Font size for normal screens */
   line-height: 1.6;
   font-family: "Indie Flower", cursive;
   color: #333;
@@ -733,7 +1131,7 @@ font-size: 3vh;
   .about-container {
     padding: 1.5vw;
     margin: 1.5vw;
-    font-size: 1.5vw;
+    font-size: 1.5vw; /* Adjusted font size for smaller screens */
   }
 }
 
@@ -743,9 +1141,9 @@ font-size: 3vh;
     border-radius: 1.5vw;
     padding: 2vw;
     margin: 2vw auto;
-    max-width: 200vw;
+    max-width: 200vw; /* Adjusted maximum width for very small screens */
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
-    font-size: 5.5vw; /* Slightly larger text */
+    font-size: 5.5vw; /* Slightly larger font size for very small screens */
     line-height: 1.6;
     font-family: "Indie Flower", cursive;
     color: #333;
@@ -757,11 +1155,11 @@ font-size: 3vh;
 }
 
 .about-container.visible {
-  left: 0; /* Move to the centre of the viewport */
+  left: 0; /* Move to the center of the viewport */
   opacity: 1; /* Make completely visible */
 }
 
-/* Meal preparation pages */
+/* Meal Preparation Pages */
 .preparation-info {
   font-family: "Indie Flower", cursive;
   display: flex;
@@ -770,27 +1168,27 @@ font-size: 3vh;
   min-height: 100vh;
   margin: 0;
   background-color: #f4f4f4;
-  font-size: 2vw;
+  font-size: 2vw; /* Font size for normal screens */
 }
 
 .preparation-container {
-  max-width: 60vw;
+  max-width: 60vw; /* Maximum width for the preparation container */
   padding: 2vw;
   background-color: rgb(245, 201, 79);
   box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
   text-align: center;
-  transform: translateX(-100%);
-  opacity: 0;
+  transform: translateX(-100%); /* Start off-screen to the left */
+  opacity: 0; /* Start invisible */
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .preparation-container.visible {
-  transform: translateX(0);
-  opacity: 1;
+  transform: translateX(0); /* Move to the center of the viewport */
+  opacity: 1; /* Make completely visible */
 }
 
 .preparation-container img {
-  max-width: 80%;
+  max-width: 80%; /* Adjusted maximum width for preparation images */
   height: auto;
 }
 
@@ -803,7 +1201,7 @@ font-size: 3vh;
 
 .preparation-time img {
   margin-right: 0.5vw;
-  width: 5%;
+  width: 5%; /* Adjusted width for preparation time images */
 }
 
 .steps {
@@ -818,12 +1216,12 @@ font-size: 3vh;
 
 .steps h3 {
   text-align: center;
-  font-size: 3vw;
+  font-size: 3vw; /* Font size for heading on normal screens */
 }
 
 .steps ol {
   padding-left: 2vw;
-  font-size: 2vw;
+  font-size: 2vw; /* Font size for ordered lists on normal screens */
   text-align: center;
 }
 
@@ -838,45 +1236,47 @@ font-size: 3vh;
 
 @media (max-width: 768px) {
   .preparation-info {
-    font-size: 3vw; 
+    font-size: 3vw; /* Adjusted font size for smaller screens */
   }
 
   .preparation-container {
-    max-width: 80vw; 
+    max-width: 80vw; /* Adjusted maximum width for smaller screens */
   }
 
   .steps h3 {
-    font-size: 4vw;
+    font-size: 4vw; /* Adjusted font size for heading on smaller screens */
   }
 
   .steps ol {
-    font-size: 3vw;
+    font-size: 3vw; /* Adjusted font size for ordered lists on smaller screens */
   }
+
   .preparation-time img {
     margin-right: 0.5vw;
-    width: 10%;
+    width: 10%; /* Adjusted width for preparation time images */
   }
 }
 
 @media (max-width: 480px) {
   .preparation-info {
-    font-size: 4vw; 
+    font-size: 4vw; /* Adjusted font size for very small screens */
   }
 
   .preparation-container {
-    max-width: 90vw; 
-    padding: 5vw;
+    max-width: 90vw; /* Adjusted maximum width for very small screens */
+    padding: 5vw; /* Adjusted padding for smaller screens */
   }
 
   .steps h3 {
-    font-size: 5vw; 
+    font-size: 5vw; /* Adjusted font size for heading on very small screens */
   }
 
   .steps ol {
-    font-size: 4vw;
+    font-size: 4vw; /* Adjusted font size for ordered lists on very small screens */
   }
+
   .preparation-time img {
     margin-right: 0.5vw;
-    width: 10%;
+    width: 10%; /* Adjusted width for preparation time images on very small screens */
   }
 }
