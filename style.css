@@ -414,7 +414,7 @@ font-size: 4vh;
     border-radius: 1vw;
     width: 45vw;
     transition: margin-left 0.8s ease-in-out;
-    transform: translateX(110%);
+    transform: translateX(190%);
   }
 }
 
