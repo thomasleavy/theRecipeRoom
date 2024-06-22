@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "thereciperoomnewsletterdb"; // Corrected database name
+$dbname = "thereciperoomnewsletterdb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,11 +17,11 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
 
-    // Prepare and bind
+    // Prepare / bind
     $stmt = $conn->prepare("INSERT INTO subscribers (email) VALUES (?)");
     $stmt->bind_param("s", $email);
 
-    // Execute the statement
+    // start the statement
     if ($stmt->execute()) {
         echo "<!DOCTYPE html>
               <html lang='en'>
