@@ -368,6 +368,19 @@ font-size: 3vh;
   width: 100%;
 }
 
+@media (max-width: 768px){ 
+  .treat-yourself-box {
+    font-size: 4vh;
+  }
+}
+
+@media (max-width: 460px) {
+  .treat-yourself-box {
+font-size: 4vh;
+  }
+}
+
+
 /* Newsletter */
 .newsletter-container {
   background-color: rgb(251, 247, 247);
@@ -393,7 +406,7 @@ font-size: 3vh;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 460px) {
   .newsletter-container {
     background-color: rgb(251, 247, 247);
     color: black;
