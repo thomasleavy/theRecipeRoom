@@ -368,6 +368,18 @@ font-size: 3vh;
   width: 100%;
 }
 
+@media (max-width: 768px){ 
+  .treat-yourself-box {
+    font-size: 4vh;
+  }
+}
+
+@media (max-width: 460px) {
+  .treat-yourself-box {
+font-size: 4vh;
+  }
+}
+
 /* Newsletter */
 .newsletter-container {
   background-color: rgb(251, 247, 247);
@@ -375,33 +387,20 @@ font-size: 3vh;
   padding: 2vw;
   border-radius: 1vw;
   width: 40vw;
-  margin-left: 0 auto;
-  transition: margin-left 0.8s ease-in-out;
-  transform: translateX(110%);
+  margin: 0 auto;
+  transform: translateX(-100vw); /* Start off-screen to the left */
+  transition: transform 0.8s ease-in-out; /* Use 'transform' to handle the animation */
 }
 
 @media (max-width: 768px) {
   .newsletter-container {
-    background-color: rgb(251, 247, 247);
-    color: black;
-    padding: 2vw;
-    border-radius: 1vw;
-    width: 40vw;
-    margin-left: -76.25vw;
-    transition: margin-left 0.8s ease-in-out;
-    transform: translateX(110%);
+    width: 70vw; /* Adjust width for smaller screens */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 460px) {
   .newsletter-container {
-    background-color: rgb(251, 247, 247);
-    color: black;
-    padding: 4vw;
-    border-radius: 1vw;
-    width: 45vw;
-    transition: margin-left 0.8s ease-in-out;
-    transform: translateX(110%);
+    width: 80vw; /* Adjust width for even smaller screens */
   }
 }
 
@@ -434,6 +433,8 @@ font-size: 3vh;
 .newsletter-button:hover {
   background-color: rgb(249, 214, 118);
 }
+
+
 
 /* Social media section */
 .p-socials {

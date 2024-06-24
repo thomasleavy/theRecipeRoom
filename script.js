@@ -1,5 +1,4 @@
 //Newsletter sign up animation section START
-
 document.addEventListener('DOMContentLoaded', function() {
   const newsletter = document.getElementById('newsletter');
 
@@ -8,23 +7,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const rect = element.getBoundingClientRect();
     return (
       rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 400 //Adust this to change where it appears on the viewport
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 400 // Adjust this to change where it appears on the viewport
     );
   }
 
   // Function used to handle a scroll event
   function handleScroll() {
     if (isInViewport(newsletter)) {
-      newsletter.style.marginLeft = '0'; // come in from the left side of the viewport
-      window.removeEventListener('scroll', handleScroll); // 
+      newsletter.style.left = '50%'; // Move to the centre of viewport
+      newsletter.style.transform = 'translate(-0%, -0%)'; // Ensure it's centered (if it was 50%, 50% it'd slant upwards)
+      window.removeEventListener('scroll', handleScroll); // Remove event listener once animation happens
     }
   }
 
-  handleScroll();
-  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // Initial check in case the element is already in the viewport
+  window.addEventListener('scroll', handleScroll); // Add scroll event listener
 });
-
 //Newsletter sign up animation section END
+
 
 
 //About us section appearing from the left side of the viewport START
