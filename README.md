@@ -1,6 +1,7 @@
 # The Recipe Room
 
 This repository contains code for The Recipe Room website. It showcases a variety of food for different meal types. It uses HTML, CSS, JavaScript, PHP and XAMMP. It uses Twitter Bootstrap. It was built using Visual Studio Code (VSC) with assistance from AI at different points.
+NOTE: If using on mobile device, this experience currently works best in landscape mode.
 
 ## Features
 
@@ -32,5 +33,5 @@ If you want to reach out, my email address is: thomasleavy1@outlook.com
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-Link: https://thomasleavy.github.io/theRecipeRoom/
+___________________________________________________________________________________________________
+Project Link: https://thomasleavy.github.io/theRecipeRoom/
